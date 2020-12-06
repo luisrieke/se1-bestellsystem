@@ -1,0 +1,14 @@
+a. Was ist mit Port 22 bzw. Port 80 gemeint?  
+
+http(s) like https://github.com/project/repo.git
+ssh like git@github.com:project/repo.git
+
+b. Was ist der Unterschied zwischen den beiden URL‐Varianten?  
+
+http(s): Verwendet den Port 80 for http, kann genutzt werden zum Schreiben und lesen von Dateien, Passwort erforderlich zum schreiben. 
+ssh: Nutzt den Port 22, erlaubt auch hier Schreibe- und Lesezugriff, braucht die SSH Keys zum Authentifizieren, dh. wenn man den öffentlichen Key angibt, wird das SSH Protokoll den privaten Key zum Authentifizieren mit Git nutzen, man braucht hier also kein Passwort.
+
+c. Bei welcher Variante ist auch WRITE im Repository ohne Passwort erlaubt? 
+
+
+ssh

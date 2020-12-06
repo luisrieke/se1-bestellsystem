@@ -1,0 +1,4 @@
+https://github.com/luis-rieke/se1-bestellsystem.git
+git@github.com:luis-rieke/se1-bestellsystem.git
+
+Repo ist aktuell private, hoffe das ist ok, kann es aber natürlich freischalten wenn gewünscht
