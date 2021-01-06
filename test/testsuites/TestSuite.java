@@ -16,10 +16,10 @@ import org.junit.runners.Suite;
 @RunWith( Suite.class )
 @Suite.SuiteClasses({		// Annotation to configure test suite's test classes
 	datamodel.CustomerTest.class,
-//	datamodel.ArticleTest.class,
-//	datamodel.OrderItemTest.class,
-//	datamodel.OrderTest.class,
-//	datamodel.RawDataFactoryTest.class
+	datamodel.ArticleTest.class,
+	datamodel.OrderItemTest.class,
+	datamodel.OrderTest.class,
+	datamodel.RawDataFactoryTest.class
 	// add more test classes ...
 })
 public class TestSuite {

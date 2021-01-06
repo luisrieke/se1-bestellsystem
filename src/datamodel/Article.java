@@ -10,10 +10,10 @@ public class Article {
 
     // Konstruktor:
     protected Article(String id, String descr, long price, int units) {
-        this.id = id;
-        this.description = descr;
-        this.unitPrice = price;
-        this.unitsInStore = units;
+    	this.id = id;
+        this.setDescription(description);
+        this.setUnitPrice(price);
+        this.setUnitsInStore(units);
     }
 
     // Methoden:
@@ -26,7 +26,13 @@ public class Article {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+    	
+    	if(description == null) {
+            this.description = "";
+        } else {
+            this.description = description;
+        }
+    	
     }
 
     public long getUnitPrice() {
@@ -34,7 +40,15 @@ public class Article {
     }
 
     public void setUnitPrice(long unitPrice) {
-        this.unitPrice = unitPrice;
+    	
+        if(unitPrice < 0) {
+            this.unitPrice = 0;
+        } else if (unitPrice == Long.MAX_VALUE) {
+            this.unitPrice = 0;
+        } else {
+            this.unitPrice = unitPrice;
+        }
+        
     }
 
     public int getUnitsInStore() {
@@ -42,6 +56,12 @@ public class Article {
     }
 
     public void setUnitsInStore(int unitsInStore) {
-        this.unitsInStore = unitsInStore;
+    	
+    	if(unitsInStore < 0 || unitsInStore == Integer.MAX_VALUE) {
+            this.unitsInStore = 0;
+        } else {
+            this.unitsInStore = unitsInStore;
+        }
+    	
     }
 }

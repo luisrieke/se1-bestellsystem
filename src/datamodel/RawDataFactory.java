@@ -51,7 +51,7 @@ final public class RawDataFactory {
     /**
      * Private constructor.
      */
-    protected RawDataFactory() {
+    private RawDataFactory() {
 
         /*
          * Creation of only instance of RawDataFactoryIntf with actual object
@@ -80,15 +80,6 @@ final public class RawDataFactory {
             }
 
         };
-    }
-
-
-    public static RawDataFactory getInstance() {
-        return instance;
-    }
-
-    public static void setInstance(RawDataFactory instance) {
-        RawDataFactory.instance = instance;
     }
 
     /**
