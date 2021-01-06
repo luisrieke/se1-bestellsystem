@@ -3,10 +3,10 @@ package datamodel;
 public class Customer {
 
 	// Attribute:
-	protected final String id;
-	protected String firstName;
-	protected String lastName;
-	protected String contact;
+	private final String id;
+	private String firstName;
+	private String lastName;
+	private String contact;
 
 	// Konstruktor:
 	protected Customer(String id, String name, String contact) {

@@ -5,10 +5,10 @@ import java.util.*;
 public class Order {
 
     // Attribute:
-    protected final long id;
-    protected Date date;
-    protected Customer customer;
-    protected List<OrderItem> items = new ArrayList<OrderItem>();
+	private final long id;
+	private Date date;
+	private Customer customer;
+	private List<OrderItem> items = new ArrayList<OrderItem>();
 
     // Konstruktor:
     protected Order(long id, Date date, Customer customer){

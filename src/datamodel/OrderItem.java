@@ -5,9 +5,9 @@ import java.util.List;
 public class OrderItem {
 
     // Attribute:
-    protected String description;
-    protected final Article article;
-    protected int unitsOrdered;
+    private String description;
+    private final Article article;
+    private int unitsOrdered;
 
     // Konstruktor:
     protected OrderItem(String descr, Article article, int units){

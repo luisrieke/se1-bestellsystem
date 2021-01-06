@@ -3,10 +3,10 @@ package datamodel;
 public class Article {
 
     // Attribute:
-    protected String id;
-    protected String description;
-    protected long unitPrice;
-    protected int unitsInStore;
+    private String id;
+    private String description;
+    private long unitPrice;
+    private int unitsInStore;
 
     // Konstruktor:
     protected Article(String id, String descr, long price, int units) {
